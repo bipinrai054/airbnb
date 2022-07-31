@@ -1,17 +1,29 @@
-import {View, Text, ImageBackground} from 'react-native';
 import React from 'react';
+import {View, Text, ImageBackground, Pressable} from 'react-native';
 import styles from './styles';
+
+import Fontisto from 'react-native-vector-icons/Fontisto';
 
 const HomeScreen = () => {
   return (
     <View>
-      {/* search bar */}
+      <Pressable
+        style={styles.searchButton}
+        onPress={() => console.log('search clicked')}>
+        <Fontisto name="search" size={25} color={'#f15454'} />
+        <Text style={styles.searchButtonText}>Where are you going?</Text>
+      </Pressable>
+
       <ImageBackground
         source={require('../../../assets/images/wallpaper.jpg')}
         style={styles.image}>
-        {/* title */}
         <Text style={styles.title}>Go Near</Text>
-        {/* button */}
+
+        <Pressable
+          style={styles.button}
+          onPress={() => console.log('explore clicked')}>
+          <Text style={styles.buttonText}>Explore Nearby Places</Text>
+        </Pressable>
       </ImageBackground>
     </View>
   );
