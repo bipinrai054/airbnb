@@ -15,7 +15,11 @@ import HomeScreen from './src/screens/home';
 // components
 import Post from './src/components/post';
 
+// data
+import feed from './assets/data/feed';
+
 const App = () => {
+  console.log(feed[0]);
   return (
     <>
       <StatusBar barStyle="dark-content" />
