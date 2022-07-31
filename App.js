@@ -13,6 +13,7 @@ import {StatusBar, SafeAreaView, Text, View} from 'react-native';
 import HomeScreen from './src/screens/home';
 import SearchResultScreen from './src/screens/searchResults';
 import DestinationSearchScreen from './src/screens/destinationSearch';
+import GuestScreen from './src/screens/guests';
 
 // components
 import Post from './src/components/post';
@@ -28,7 +29,8 @@ const App = () => {
         {/* <HomeScreen /> */}
         {/* <Post /> */}
         {/* <SearchResultScreen /> */}
-        <DestinationSearchScreen />
+        {/* <DestinationSearchScreen /> */}
+        <GuestScreen />
       </SafeAreaView>
     </>
   );
