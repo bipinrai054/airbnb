@@ -12,6 +12,7 @@ import {StatusBar, SafeAreaView, Text, View} from 'react-native';
 // screens
 import HomeScreen from './src/screens/home';
 import SearchResultScreen from './src/screens/searchResults';
+import DestinationSearchScreen from './src/screens/destinationSearch';
 
 // components
 import Post from './src/components/post';
@@ -22,11 +23,12 @@ import feed from './assets/data/feed';
 const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar />
       <SafeAreaView>
         {/* <HomeScreen /> */}
         {/* <Post /> */}
-        <SearchResultScreen />
+        {/* <SearchResultScreen /> */}
+        <DestinationSearchScreen />
       </SafeAreaView>
     </>
   );
