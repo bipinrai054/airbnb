@@ -12,12 +12,16 @@ import {StatusBar, SafeAreaView, Text, View} from 'react-native';
 // screens
 import HomeScreen from './src/screens/home';
 
+// components
+import Post from './src/components/post';
+
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <HomeScreen />
+        {/* <HomeScreen /> */}
+        <Post />
       </SafeAreaView>
     </>
   );
