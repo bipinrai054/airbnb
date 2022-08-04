@@ -7,7 +7,12 @@
  */
 
 import React from 'react';
+
+// react native
 import {StatusBar, SafeAreaView, Text, View} from 'react-native';
+
+// routes
+import Router from './src/navigations/router';
 
 // screens
 import HomeScreen from './src/screens/home';
@@ -24,14 +29,11 @@ import feed from './assets/data/feed';
 const App = () => {
   return (
     <>
-      <StatusBar />
-      <SafeAreaView>
-        {/* <HomeScreen /> */}
-        {/* <Post /> */}
-        {/* <SearchResultScreen /> */}
-        {/* <DestinationSearchScreen /> */}
-        <GuestScreen />
-      </SafeAreaView>
+      {/* <View>
+        <Text>Noice</Text>
+      </View> */}
+      {/* <StatusBar /> */}
+      <Router />
     </>
   );
 };
